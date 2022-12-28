@@ -13,7 +13,7 @@ from downloader.dicts import *
 
 
 def workers(url):
-    print(" [] Do not exit 'til I'm done!")
+    print(" [*] Do not exit 'til I'm done!")
     if os.path.exists("files"):
         os.system("rm -rf files")
         os.system("mkdir files")
