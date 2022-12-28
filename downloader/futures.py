@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 
-import threading
+
+import concurrent.futures
 import os
+
 
 
 from downloader.writers import download
@@ -11,12 +13,11 @@ from downloader.dicts import *
 
 
 def workers(url):
-    print(" [*] Do not exit 'til I'm done!")
+    print(" [] Do not exit 'til I'm done!")
     if os.path.exists("files"):
         os.system("rm -rf files")
         os.system("mkdir files")
     else:
         os.system("mkdir files")
-    gethemall = threading.Thread(target=download, args=(url,))
-    gethemall.start()
-    gethemall.join()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1000) as executor:
+        fdown = executor.submit(download, url)
