@@ -13,6 +13,7 @@ from downloader.dicts import *
 
 def xml():
     parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Created By: SickAndTired")
     parser.add_argument("-t", "--target", metavar="\b", required=True, help="target.com")
     parser.add_argument("-v", "--verbose", action="store_true")
     parser.add_argument("any", nargs="*")
