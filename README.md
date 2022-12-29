@@ -12,11 +12,11 @@
 
       You should pick a mode
        │ 
-       └──────[crawler]
+       └──────[cct-fuzz]
        │ 
        └──────[xml]
 
-### :heavy_exclamation_mark: crawler mode is yet to come !
+### :heavy_exclamation_mark: fuzz mode is yet to come !
 _________________________________________       
        
       $./BucketList.py xml -h
