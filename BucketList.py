@@ -15,9 +15,9 @@ def initializer():
         arg = sys.argv[1]
         if arg == "xml":
             xml()
-        elif arg == "spider-plus":
-            spider_plus()
-        elif arg != "xml" or arg != "spider-plus":
+        elif arg == "cct-fuzz":
+            cct_fuzz()
+        elif arg != "xml" or arg != "cct-fuzz":
             print("No such modes!")
             print("Try no args for help")
     except IndexError:
