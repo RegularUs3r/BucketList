@@ -25,5 +25,5 @@ def xml():
     elif target != "":
         start(target)
 
-def spider_plus():
+def cct_fuzz():
     print("Soon!")
