@@ -45,5 +45,7 @@ _________________________________________
 ### :computer: Demo
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/78124142/173196950-43c70ac2-a1af-416f-b2de-deed4af2abd4.gif" />
+<img src="https://user-images.githubusercontent.com/78124142/209925389-b3fb6579-02d2-498c-b585-3aca51efccd7.gif" />
+
+<img src="https://user-images.githubusercontent.com/78124142/209925381-57c36d72-baeb-4e95-9dbc-ff089a6f2f88.gif" />
 </p>
