@@ -14,20 +14,51 @@ from downloader.writers import download
 from downloader.erroredones import erroredones
 
 
-def start(target):
-    url = target
-    r = requests.get(url)
-    root = ET.fromstring(r.content)
-    evaluation(root)
-    decoy(url)
-    erroredones(url)
+def start(target, extension):
+    try:
+        url = target
+        if url[-1] != "/":
+            url = target+"/"
+            r = requests.get(url)
+            root = ET.fromstring(r.content)
+            if extension != None:
+                evaluation(root, extension)
+            else:
+                evaluation(root)
+            decoy(url)
+            erroredones(url)
+        else:
+            r = requests.get(url)
+            root = ET.fromstring(r.content)
+            evaluation(root, extension)
+            decoy(url)
+            erroredones(url)
+
+    except MissingSchema:
+        print("Invalid URL")
 
 
-def start2(target):
-    url = target
-    r = requests.get(url)
-    root = ET.fromstring(r.content)
-    evaluation(root)
-    out()
-    workers(url)
-    erroredones(url)
+def start2(target, extension):
+    try:
+        url = target
+        if url[-1] != "/":
+            url = target+"/"
+            r = requests.get(url)
+            root = ET.fromstring(r.content)
+            if extensions != None:
+                evaluation(root, extension)
+            else:
+                extensions(root)
+            out()
+            workers(url)
+            erroredones(url)
+        else:
+            r = requests.get(url)
+            root = ET.fromstring(r.content)
+            evaluation(root, extension)
+            out()
+            workers(url)
+            erroredones(url)
+
+    except MissingSchema:
+        print("Invalid URL")
