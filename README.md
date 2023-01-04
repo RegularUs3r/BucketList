@@ -45,9 +45,8 @@ _________________________________________
 
 
 ##### :warning: Disclaimer! - Only use it under prior authorization of the target. I do not take any responsibility for its use. :warning:
-<--!
-### :computer: Demo
 
+<!--
 <p align="center">
 <img src="https://user-images.githubusercontent.com/78124142/209925389-b3fb6579-02d2-498c-b585-3aca51efccd7.gif" />
 
