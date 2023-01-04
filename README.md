@@ -6,10 +6,10 @@ ________________________________________________________________________________
 ### Features
       Threaded downloads
       Download by extension
-
+_____________________________________________________________________________________________________________________
 ### :gear: Instalation
       pip install -r requirements.txt
-
+_____________________________________________________________________________________________________________________
 ### :man_technologist: Usage 
       ./BucketList.py 
       Created By: SickAndTired
@@ -19,9 +19,7 @@ ________________________________________________________________________________
        └──────[cct-fuzz]
        │ 
        └──────[xml]
-
-### :heavy_exclamation_mark: fuzz mode is yet to come !
-_________________________________________       
+_____________________________________________________________________________________________________________________      
        
       $./BucketList.py xml -h
       Created By: SickAndTired
@@ -38,12 +36,13 @@ _________________________________________
         -t, --target  target.com
         -v, --verbose
         
-_________________________________________
+_____________________________________________________________________________________________________________________
 
 ### :receipt: Example
        ./BucketList.py xml -v -t http://some-target-bucket.s3-sa-east-1.amazonaws.com/
+_____________________________________________________________________________________________________________________
 
-
+### :heavy_exclamation_mark: fuzz mode is yet to come !
 ##### :warning: Disclaimer! - Only use it under prior authorization of the target. I do not take any responsibility for its use. :warning:
 
 <!--
