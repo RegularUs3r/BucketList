@@ -1,7 +1,6 @@
+<img src="https://user-images.githubusercontent.com/78124142/210653422-169a4e6e-3d71-4a58-998d-00e9cd95fb15.png"/>
 
 ![Python minimum version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
-### BucketList was created, mainly due my curiosity, but also to help anyone to download files from open aws' buckets, with an excuse to analyze them locally.
-
 _____________________________________________________________________________________________________________________
 
 ### Features
