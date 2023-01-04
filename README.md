@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/78124142/210653422-169a4e6e-3d71-4a58-998d-00e9cd95fb15.png"/>
+<img src="https://user-images.githubusercontent.com/78124142/210655476-ba2678c0-99a9-49ba-91b1-8009461c18c2.jpg"/>
 
 ![Python minimum version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
 _____________________________________________________________________________________________________________________
