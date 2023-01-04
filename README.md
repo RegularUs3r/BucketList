@@ -45,7 +45,7 @@ _________________________________________
 
 
 ##### :warning: Disclaimer! - Only use it under prior authorization of the target. I do not take any responsibility for its use. :warning:
-
+<--!
 ### :computer: Demo
 
 <p align="center">
@@ -53,3 +53,4 @@ _________________________________________
 
 <img src="https://user-images.githubusercontent.com/78124142/209925381-57c36d72-baeb-4e95-9dbc-ff089a6f2f88.gif" />
 </p>
+-->
