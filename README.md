@@ -1,6 +1,6 @@
-# BucketList - Any last whishes ?
+
 ![Python minimum version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
-### :spider: BucketList was created, mainly due my curiosity, but also to help anyone to download files from open aws' buckets, with an excuse to analyze them locally.
+### BucketList was created, mainly due my curiosity, but also to help anyone to download files from open aws' buckets, with an excuse to analyze them locally.
 
 _____________________________________________________________________________________________________________________
 
