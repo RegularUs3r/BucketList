@@ -6,7 +6,7 @@ ________________________________________________________________________________
 
 ### Features
       Threaded downloads
-      Extension especification
+      Download by extension
 
 ### :gear: Instalation
       pip install -r requirements.txt
