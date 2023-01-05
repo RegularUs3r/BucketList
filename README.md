@@ -42,7 +42,7 @@ ________________________________________________________________________________
        ./BucketList.py xml -v -t http://some-target-bucket.s3-sa-east-1.amazonaws.com/
 _____________________________________________________________________________________________________________________
 
-### :heavy_exclamation_mark: fuzz mode is yet to come !
+### :heavy_exclamation_mark: fuzzing mode is yet to come !
 ##### :warning: Disclaimer! - Only use it under prior authorization of the target. I do not take any responsibility for its use. :warning:
 
 <!--
