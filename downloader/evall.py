@@ -11,16 +11,17 @@ from downloader.creator import creator
 
 
 
-def evaluation(root, extension):
+def evaluation(root, extensions):
     for child in root.iter("*"):
         if "Key" in child.tag and "." in child.text:
             data = child.text
-            if data.split(".")[-1].isalpha() and extension == data.split(".")[-1]:
+            if extensions == None:
+                #print(data)
                 bigdata.append(data)
                 ext = "." + data.split(".")[-1]
                 if ext not in alldict:
                     alldict.append(ext)
-            elif data.split(".")[-1].isalpha() and extension == None:
+            elif data.split(".")[-1] in extensions:
                 bigdata.append(data)
                 ext = "." + data.split(".")[-1]
                 if ext not in alldict:
