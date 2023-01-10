@@ -21,10 +21,7 @@ def start(target, extension):
             url = target+"/"
             r = requests.get(url)
             root = ET.fromstring(r.content)
-            if extension != None:
-                evaluation(root, extension)
-            else:
-                evaluation(root)
+            evaluation(root, extension)
             decoy(url)
             erroredones(url)
         else:
@@ -45,10 +42,7 @@ def start2(target, extension):
             url = target+"/"
             r = requests.get(url)
             root = ET.fromstring(r.content)
-            if extensions != None:
-                evaluation(root, extension)
-            else:
-                extensions(root)
+            evaluation(root, extension)
             out()
             workers(url)
             erroredones(url)
