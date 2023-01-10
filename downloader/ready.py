@@ -23,7 +23,6 @@ def xml():
     verbose = args.verbose
     extensions = args.extensions.split(",")
     if verbose and target != "":
-        #print(extensions)
         start2(target, extensions)
     elif target != "":
         start(target, extensions)
