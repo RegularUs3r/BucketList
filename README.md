@@ -11,14 +11,18 @@ ________________________________________________________________________________
       pip install -r requirements.txt
 _____________________________________________________________________________________________________________________
 ### :man_technologist: Usage 
-      ./BucketList.py 
+      usage: BucketList.py [-h] -t [-x] [-v] [ ...]
+
       Created By: SickAndTired
 
-      You should pick a mode
-       │ 
-       └──────[cct-fuzz]
-       │ 
-       └──────[xml]
+      positional arguments:
+
+
+      optional arguments:
+        -h, --help        show this help message and exit
+        -t, --target  some-target-bucket.s3-sa-east-1.amazonaws.com
+        -x, --ext     specify extensions separated by comma
+        -v, --verbose
 _____________________________________________________________________________________________________________________      
        
       $./BucketList.py xml -h
