@@ -19,7 +19,15 @@ def download(url):
         print("\r    Working on it", end=""),bar.next()
         fille = items
         filename = fille.replace("/", "")
-        r = requests.get(url+fille, verify=False)
+        if proxy:
+            proxy = {"https": proxy}
+        if header:
+            header_name = header.split(": ")[0]
+            header_value = header.split(": ")[1]
+            headers = {header_name: header_value}
+        else:
+            headers = None   
+        r = requests.get(url+fille, verify=False, proxies=proxy, headers=headers)
         if r.status_code != 200:
             failedones[fille] = failedones.get(fille, 0) + 1
         else:
