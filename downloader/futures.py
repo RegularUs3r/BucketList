@@ -12,7 +12,7 @@ from downloader.dicts import *
 
 
 
-def workers(url):
+def workers(url, header, proxy):
     print(" [*] Do not exit 'til I'm done!")
     if os.path.exists("files"):
         os.system("rm -rf files")
@@ -20,4 +20,4 @@ def workers(url):
     else:
         os.system("mkdir files")
     with concurrent.futures.ThreadPoolExecutor(max_workers=1000) as executor:
-        fdown = executor.submit(download, url)
+        fdown = executor.submit(download, url, header, proxy)
