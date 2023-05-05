@@ -14,7 +14,7 @@ from downloader.writers import download
 from downloader.erroredones import erroredones
 
 
-def start(target, extension, header, proxy):
+def start(target, extension, proxy, header):
     try:
         url = target
         if url[-1] != "/":
@@ -22,20 +22,20 @@ def start(target, extension, header, proxy):
             r = requests.get(url)
             root = ET.fromstring(r.content)
             evaluation(root, extension)
-            decoy(url, header, proxy)
+            decoy(url, proxy, header)
             erroredones(url)
         else:
             r = requests.get(url)
             root = ET.fromstring(r.content)
             evaluation(root, extension)
-            decoy(url, header, proxy)
+            decoy(url, proxy, header)
             erroredones(url)
 
     except MissingSchema:
         print("Invalid URL")
 
 
-def start2(target, extension, header, proxy):
+def start2(target, extension, proxy, header):
     try:
         url = target
         if url[-1] != "/":
@@ -44,14 +44,14 @@ def start2(target, extension, header, proxy):
             root = ET.fromstring(r.content)
             evaluation(root, extension)
             out()
-            workers(url, header, proxy)
+            workers(url, proxy, header)
             erroredones(url)
         else:
             r = requests.get(url)
             root = ET.fromstring(r.content)
             evaluation(root, extension)
             out()
-            workers(url, header, proxy)
+            workers(url, proxy, header)
             erroredones(url)
 
     except MissingSchema:
