@@ -7,5 +7,5 @@ from downloader.writers import download
 
 
 
-def decoy(url, header, proxy):
-    workers(url, header, proxy)
+def decoy(url, proxy, header):
+    workers(url, proxy, header)
